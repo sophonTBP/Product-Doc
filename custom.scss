@@ -6,12 +6,7 @@ body {
     color: rgb(177, 179, 207);
   }
   
-  .feather {
-    width: 16px;
-    height: 16px;
-    vertical-align: text-bottom;
-  }
-  
+ 
   /*
    * Sidebar
    */
@@ -34,6 +29,7 @@ body {
   
   .sidebar-sticky {
     position: relative;
+    font-size: 1.2rem;
     top: 0;
     height: calc(100vh - 48px);
     padding-top: .5rem;
