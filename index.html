@@ -17,242 +17,310 @@
 <body>
 
 
-    <nav class="navbar navbar-dark sticky-top bg-dark p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-3 mr-0 px-3">Raspberry Documentation</a>
+    <navbar class="navbar navbar-dark sticky-top bg-dark p-0 shadow">
+        <header class="navbar-brand col-md-3 col-lg-3 mr-0 px-3">Raspberry pi</header>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+    </navbar>
+
+
+
+    <nav id="navbar" class="col-md-3 col-lg-3 d-md-block  sidebar collapse navbar-collapse">
+        <div class="sidebar-sticky px-3 pt-4 ">
+            <header class="h4">Documentation</header>
+            <ul class="navbar-nav ml-lg-auto px-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#SD_card">SD card</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Monitor_Connection">Monitor Connection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Keyboard_and_mouse">Keyboard and mouse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Power_supply">Power supply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Ethernet">Ethernet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#USB_wireless_dongle">USB wireless dongle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Audio_lead">Audio lead</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Troubleshooting">Troubleshooting</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav-link" href="#Installing_operating_system_images">Installing operating
+                        system images</a>
+                    </li>
+                <li class="nav_item">
+                    <a class="nav-link" href="#Using_other_tools">Using other tools</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav-link" href="#Boot_your_new_OS">Boot your new OS</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-   
-        
-            <nav id="navbar" class="col-md-3 col-lg-3  d-md-block  sidebar collapse navbar-collapse">
-                <div class="sidebar-sticky ">
-                    <ul class="navbar-nav ml-lg-auto px-3">
+    <main id="main-doc" class="col-md-6 ml-sm-auto col-lg-9 px-md-4 ">
+        <div >
+           
+            <section class="main-section mb-5" id="SD_card">
+                <header id="SD" class="h3 SD_card">SD
+                    card</header>
+                <article>
+                    <p>
+                        We recommend a minimum of 8GB class 4 or class 10 microSD card. To save time, you can get a
+                        card
+                        that is pre-installed with NOOBS or Raspberry Pi OS, although setting up your own card is
+                        easy.
+                        The Raspberry Pi should work with any compatible SD card, although there are some guidelines
+                        that
+                        should be followed:
+                        SD card size (capacity)
+                        For installation of Raspberry Pi OS with desktop and recommended software (Full) via NOOBS
+                        the
+                        minimum card size is 16GB. For the image installation of Raspberry Pi OS with desktop and
+                        recommended software, the minimum card size is 8GB. For Raspberry Pi OS Lite image
+                        installations we
+                        recommend a minimum of 4GB. Some distributions, for example LibreELEC and Arch, can run on
+                        much
+                        smaller cards. If you're planning to use a card of 64GB or more with NOOBS, see this
+                        page first.
+                    </p>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#SD">SD card</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Monitor">Monitor Connection</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Keyboard and mouse">Keyboard and mouse</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Power supply">Power supply</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Ethernet">Ethernet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#USB wireless dongle">USB wireless dongle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Audio lead">Audio lead</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Troubleshooting">Troubleshooting</a>
-                        </li>
+                    <p>
+                        Note: Only the Raspberry Pi 3A+, 3B+ and Compute Module 3+ can boot from an SD card larger
+                        than 256
+                        GB. This is because there was a bug in the SoC used on previous models of Pi.
+                        SD card class
+                        The card class determines the sustained write speed for the card; a class 4 card will be
+                        able to
+                        write at 4MB/s, whereas a class 10 should be able to attain 10 MB/s. However, it should be
+                        noted
+                        that this does not mean a class 10 card will outperform a class 4 card for general usage,
+                        because
+                        often this write speed is achieved at the cost of read speed and increased seek times.
+                    </p>
+                    <p>SD card physical size
+                        The original Raspberry Pi Model A and Raspberry Pi Model B require full-size SD cards. From
+                        the
+                        Model B+ (2014) onwards, a micro SD card is required.</p>
 
+                </article>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Monitor_Connection">
+                <header id="Monitor Connection" class="h2 mt-4 pt-5">
+                    Monitor Connection
+                </header>
 
-                    </ul>
-                </div>
-            </nav>
+                <article>
 
-            <main id="main-doc" class="col-md-6 ml-sm-auto col-lg-9 px-md-4 ">
-                <div>
-                <section class=" mt-4 mb-5" id="SD 
-        card">
-                    <header id="SD" class="h3 mt-4 pt-5">SD
-                        card</header>
-                    <article>
-                        <p>
-                            We recommend a minimum of 8GB class 4 or class 10 microSD card. To save time, you can get a
-                            card
-                            that is pre-installed with NOOBS or Raspberry Pi OS, although setting up your own card is
-                            easy.
-                            The Raspberry Pi should work with any compatible SD card, although there are some guidelines
-                            that
-                            should be followed:
-                            SD card size (capacity)
-                            For installation of Raspberry Pi OS with desktop and recommended software (Full) via NOOBS
-                            the
-                            minimum card size is 16GB. For the image installation of Raspberry Pi OS with desktop and
-                            recommended software, the minimum card size is 8GB. For Raspberry Pi OS Lite image
-                            installations we
-                            recommend a minimum of 4GB. Some distributions, for example LibreELEC and Arch, can run on
-                            much
-                            smaller cards. If you're planning to use a card of 64GB or more with NOOBS, see this
-                            page first.
-                        </p>
+                    <p>
 
-                        <p>
-                            Note: Only the Raspberry Pi 3A+, 3B+ and Compute Module 3+ can boot from an SD card larger
-                            than 256
-                            GB. This is because there was a bug in the SoC used on previous models of Pi.
-                            SD card class
-                            The card class determines the sustained write speed for the card; a class 4 card will be
-                            able to
-                            write at 4MB/s, whereas a class 10 should be able to attain 10 MB/s. However, it should be
-                            noted
-                            that this does not mean a class 10 card will outperform a class 4 card for general usage,
-                            because
-                            often this write speed is achieved at the cost of read speed and increased seek times.
-                        </p>
-                        <p>SD card physical size
-                            The original Raspberry Pi Model A and Raspberry Pi Model B require full-size SD cards. From
-                            the
-                            Model B+ (2014) onwards, a micro SD card is required.</p>
+                        The Raspberry Pi has an HDMI port which you can connect directly to a monitor or TV with an
+                        HDMI
+                        cable. This is the easiest solution; some modern monitors and TVs have HDMI ports, some do
+                        not, but
+                        there are other options.
+                    </p>
+                    <p>
+                        Note that the Raspberry Pi 4 has two micro HDMI connectors, which require a good-quality
+                        micro HDMI
+                        cable, especially when using 4K monitors/TVs. Raspberry Pi sell a suitable cable; for more
+                        details
+                        see here.
+                    </p>
+                </article>
 
-                    </article>
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Monitor" class="h2 mt-4 pt-5">
-                        Monitor Connection
-                    </header>
+            </section>
 
-                    <article>
+            <section class="main-section border-top mt-4 mb-5" id="Keyboard_and_mouse">
+                <header id="Keyboard and mouse" class="h2 mt-4 pt-5">Keyboard and mouse
 
-                        <p>
-
-                            The Raspberry Pi has an HDMI port which you can connect directly to a monitor or TV with an
-                            HDMI
-                            cable. This is the easiest solution; some modern monitors and TVs have HDMI ports, some do
-                            not, but
-                            there are other options.
-                        </p>
-                        <p>
-                            Note that the Raspberry Pi 4 has two micro HDMI connectors, which require a good-quality
-                            micro HDMI
-                            cable, especially when using 4K monitors/TVs. Raspberry Pi sell a suitable cable; for more
-                            details
-                            see here.
-                        </p>
-                    </article>
-
-                </section>
-
-                <section class="border-top mt-4 mb-5">
-                    <header id="Keyboard and mouse" class="h2 mt-4 pt-5">Keyboard and mouse
-
-                    </header>
-                    <article>
-                        <ul>
-                            <li>Any standard USB keyboard and mouse will work with your Raspberry Pi.</li>
-                            <li>Wireless keyboards and mice will work if already paired.</li>
-                            <li>For keyboard layout configuration options see raspi-config.</li>
-                        </ul>
-                    </article>
-
-                </section>
-
-                <section class="border-top mt-4 mb-5">
-                    <header id="Power supply" class="h2 mt-4 pt-5">Power supply</header>
-                    <article>
-                        <ul>
-                            <li>The Pi is powered by a USB Micro [models pre 4B] or USB Type-C [model 4B] power supply
-                                (like
-                                most standard mobile phone chargers).</li>
-                            <li>You need a good-quality power supply that can supply at least 3A at 5V for the Model 4B,
-                                2A at
-                                5V for the Model 3B and 3B+, or 700mA at 5V for the earlier, lower-powered Pi models. We
-                                recommend using the official Raspberry Pi power supply, which is designed specifically
-                                for
-                                Raspberry Pi.</li>
-                            <li>Low-current (~700mA) power supplies will work for basic usage, but are likely to cause
-                                the Pi to
-                                reboot if it draws too much power. They are not suitable for use with the Pi 3 or 4.
-                            </li>
-                        </ul>
-                    </article>
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Power supply Warnings" class="h2 mt-4 pt-5">Power Supply Warnings</header>
-                    <article>
-                        <p>On all models of Raspberry Pi since the Raspberry Pi B+ (2014) except the Zero range, there
-                            is
-                            low-voltage detection circuitry that will detect if the supply voltage drops below 4.63V
-                            (+/- 5%).
-                            This will result in a warning icon being displayed on all attached displays and an entry
-                            being being
-                            added to the kernel log.</p>
-                        <p>If you are seeing warnings, you should improve the power supply and/or cable, as low power
-                            can cause
-                            problems with corruption of SD cards, or erratic behaviour of the Pi itself; for example,
-                            unexplained crashes.</p>
-                        <p>Voltages can drop for a variety of reasons, for example if the power supply itself is
-                            inadequate, the
-                            power supply cable is made of too thin wires, or you have plugged in high demand USB
-                            devices.</p>
-                        <p></p>
-                    </article>
-
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Backpowering" class="h2 mt-4 pt-5">Backpowering</header>
-                    <article>
-                        <p>Backpowering occurs when USB hubs do not provide a diode to stop the hub from powering
-                            against the
-                            host computer. Other hubs will provide as much power as you want out each port. Please also
-                            be aware
-                            that some hubs will backfeed the Raspberry Pi. This means that the hubs will power the
-                            Raspberry Pi
-                            through its USB cable input cable, without the need for a separate micro-USB power cable,
-                            and bypass
-                            the voltage protection. If you are using a hub that backfeeds to the Raspberry Pi and the
-                            hub
-                            experiences a power surge, your Raspberry Pi could potentially be damaged.</p>
-                    </article>
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Ethernet" class="h2 mt-4 pt-5">Ethernet</header>
-                    <article>
-                        <p>Ethernet (network) cable [Model B/B+/2B/3B/3B+/4B only]</p>
-                        <ul>
-                            <li>An Ethernet cable is used to connect your Pi to a local network and the internet.</li>
-                        </ul>
-                    </article>
-
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header class="h2 mt-4 pt-5" id="USB wireless dongle">USB wireless dongle</header>
-                    <article>
-                        <p>Only required if you need wireless connectivity and are using an older model without built-in
-                            wireless functionality. </p>
-                    </article>
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Audio lead" class="h2 mt-4 pt-5">Audio lead </header>
-                    <p>Audio can be played through speakers or headphones using a standard 3.5mm jack.</p>
+                </header>
+                <article>
                     <ul>
-                        <li>Without an HDMI cable, an audio lead is necessary to produce sound.</li>
-                        <li>No separate audio lead is necessary if you're using an HDMI cable to connect to a monitor
-                            with
-                            speakers, as audio can be played directly through the display; but it is possible to connect
-                            one if
-                            you prefer to have the audio played through other speakers - this requires configuration.
+                        <li>Any standard USB keyboard and mouse will work with your Raspberry Pi.</li>
+                        <li>Wireless keyboards and mice will work if already paired.</li>
+                        <li>For keyboard layout configuration options see raspi-config.</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section class="main-section border-top mt-4 mb-5" id="Power_supply">
+                <header id="Power supply" class="h2 mt-4 pt-5">Power supply</header>
+                <article>
+                    <ul>
+                        <li>The Pi is powered by a USB Micro [models pre 4B] or USB Type-C [model 4B] power supply
+                            (like
+                            most standard mobile phone chargers).</li>
+                        <li>You need a good-quality power supply that can supply at least 3A at 5V for the Model 4B,
+                            2A at
+                            5V for the Model 3B and 3B+, or 700mA at 5V for the earlier, lower-powered Pi models. We
+                            recommend using the official Raspberry Pi power supply, which is designed specifically
+                            for
+                            Raspberry Pi.</li>
+                        <li>Low-current (~700mA) power supplies will work for basic usage, but are likely to cause
+                            the Pi to
+                            reboot if it draws too much power. They are not suitable for use with the Pi 3 or 4.
                         </li>
                     </ul>
-                </section>
-                <section class="border-top mt-4 mb-5">
-                    <header id="Troubleshooting" class="h2 mt-4 pt-5">Troubleshooting</header>
-                    <article>
-                        <p>
-                            For any issues during setup, search the forums for a solution. If you cannot find one,
-                            please post
-                            your problem, providing as much detail as possible.
-                        </p>
-                    </article>
-                </section>
-            </div>
-        
-        
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+                </article>
+            <div class="border-top mt-5"></div>
+                <header id="Power supply Warnings" class="h2 mt-4 pt-5">Power Supply Warnings</header>
+                <article>
+                    <p>On all models of Raspberry Pi since the Raspberry Pi B+ (2014) except the Zero range, there
+                        is
+                        low-voltage detection circuitry that will detect if the supply voltage drops below 4.63V
+                        (+/- 5%).
+                        This will result in a warning icon being displayed on all attached displays and an entry
+                        being being
+                        added to the kernel log.</p>
+                    <p>If you are seeing warnings, you should improve the power supply and/or cable, as low power
+                        can cause
+                        problems with corruption of SD cards, or erratic behaviour of the Pi itself; for example,
+                        unexplained crashes.</p>
+                    <p>Voltages can drop for a variety of reasons, for example if the power supply itself is
+                        inadequate, the
+                        power supply cable is made of too thin wires, or you have plugged in high demand USB
+                        devices.</p>
+                    <p></p>
+                </article>
 
-    
+                <div class="border-top mt-5"></div>
+                <header id="Backpowering" class="h2 mt-4 pt-5">Backpowering</header>
+                <article>
+                    <p>Backpowering occurs when USB hubs do not provide a diode to stop the hub from powering
+                        against the
+                        host computer. Other hubs will provide as much power as you want out each port. Please also
+                        be aware
+                        that some hubs will backfeed the Raspberry Pi. This means that the hubs will power the
+                        Raspberry Pi
+                        through its USB cable input cable, without the need for a separate micro-USB power cable,
+                        and bypass
+                        the voltage protection. If you are using a hub that backfeeds to the Raspberry Pi and the
+                        hub
+                        experiences a power surge, your Raspberry Pi could potentially be damaged.</p>
+                </article>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Ethernet">
+                <header id="Ethernet" class="h2 mt-4 pt-5">Ethernet</header>
+                <article>
+                    <p>Ethernet (network) cable [Model B/B+/2B/3B/3B+/4B only]</p>
+                    <ul>
+                        <li>An Ethernet cable is used to connect your Pi to a local network and the internet.</li>
+                    </ul>
+                </article>
+
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="USB_wireless_dongle">
+                <header class="h2 mt-4 pt-5" id="USB wireless dongle">USB wireless dongle</header>
+                <article>
+                    <p>Only required if you need wireless connectivity and are using an older model without built-in
+                        wireless functionality. </p>
+                </article>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Audio_lead">
+                <header id="Audio lead" class="h2 mt-4 pt-5">Audio lead </header>
+                <p>Audio can be played through speakers or headphones using a standard 3.5mm jack.</p>
+                <ul>
+                    <li>Without an HDMI cable, an audio lead is necessary to produce sound.</li>
+                    <li>No separate audio lead is necessary if you're using an HDMI cable to connect to a monitor
+                        with
+                        speakers, as audio can be played directly through the display; but it is possible to connect
+                        one if
+                        you prefer to have the audio played through other speakers - this requires configuration.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Troubleshooting">
+                <header id="Troubleshooting" class="h2 mt-4 pt-5">Troubleshooting</header>
+                <article>
+                    <p>
+                        For any issues during setup, search the forums for a solution. If you cannot find one,
+                        please post
+                        your problem, providing as much detail as possible.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Installing_operating_system_images">
+                <header id="Installing operating system images" class="h3 mt-4 pt-5">Installing operating system images
+                </header>
+                <p>Raspberry Pi have developed a graphical SD card writing tool that works on Mac OS, Ubuntu 18.04 and
+                    Windows, and is the easiest option for most users as it will download the image and install it
+                    automatically to the SD card.</p>
+                <ul>
+                    <li>Download the latest version of Raspberry Pi Imager and install it. </li>
+                    <li>If you want to use Raspberry Pi Imager on the Raspberry Pi itself, you can install it from a
+                        terminal using <code>sudo apt install rpi-imager</code></li>
+                    <li>Connect an SD card reader with the SD card inside.</li>
+                    <li>Open Raspberry Pi Imager and choose the required OS from the list presented.</li>
+                    <li>Choose the SD card you wish to write your image to.</li>
+                    <li>Review your selections and click 'WRITE' to begin writing data to the SD card.</li>
+                </ul>
+                <p><b>Note:</b>if using the Raspberry Pi Imager on Windows 10 with Controlled Folder Access enabled, you
+                    will need to explicitly allow the Raspberry Pi Imager permission to write the SD card. If this is
+                    not done, Raspberry Pi Imager will fail with a "failed to write" error.</p>
+
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Using_other_tools">
+                <header id="Using other tools" class="h3 mt-4 pt-5">Using other tools</header>
+                <p><b class="h5">Download the image:</b>
+
+                    Official images for recommended operating systems are available to download from the Raspberry Pi
+                    website downloads page.
+
+                    Alternative distributions are available from third-party vendors.
+
+                    You may need to unzip <code>.zip</code> downloads to get the image file (<code>.img</code>) to write
+                    to your SD card.</p>
+
+
+                <p><b>Note:</b>the Raspberry Pi OS with desktop image contained in the ZIP archive is over 4GB in size
+                    and uses the ZIP64 format. To uncompress the archive, a unzip tool that supports ZIP64 is required.
+                    The following zip tools support ZIP64:</p>
+                <ul>
+                    <li>7-Zip (Windows)</li>
+                    <li>The Unarchiver (Mac)</li>
+                    <li>Unzip (Linux)</li>
+                </ul>
+                <b class="h5">Writing the image:</b>
+                <p>How you write the image to the SD card will depend on the operating system you are using. </p>
+                <ul>
+                    <li>Linux</li>
+                    <li>Mac OS</li>
+                    <li>Windows</li>
+                    <li>Chrome OS</li>
+                </ul>
+            </section>
+            <section class="main-section border-top mt-4 mb-5" id="Boot_your_new_OS">
+                <header class="h3 mt-4 pt-5" id="Boot your new OS">Boot your new OS</header>
+                <p>You can now insert the SD card into the Raspberry Pi and power it up.
+
+                    For the official Raspberry Pi OS, if you need to manually log in, the default user name is
+                    <code>pi</code> , with password <code>raspberry</code>. Remember the default keyboard layout is set
+                    to UK.
+
+                    You should change the default password straight away to ensure your Raspberry Pi is secure.</p>
+            </section>
+
+        </div>
+
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
 </body>
 
 </html>
