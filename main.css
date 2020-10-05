@@ -2,7 +2,7 @@
 body {
   font-size: 0.875rem;
   font-family: "Roboto mono";
-  background-color:lightslategray;
+  background-color:rgb(61, 101, 187);
   color: #ffffff;
 }
 
@@ -40,8 +40,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   /* Scrollable contents if viewport is shorter than content. */
-  background-color:#03002b;
-  color: rgba(221, 214, 247, 0.664);
+  background-color:#02050fe5;
+  color: rgba(218, 220, 255, 0.945);
 }
 
 @supports (position: -webkit-sticky) or (position: sticky) {
@@ -55,10 +55,6 @@ body {
   color: #f3f3f3;
 }
 
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
-}
 
 .sidebar .nav-link.active {
   color: #007bff;
@@ -77,11 +73,13 @@ body {
 /*
  * Navbar
  */
+ .navbar{
+  background-color:  #02050fe5;}
 .navbar-brand {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-size: 1.5rem;
-  background-color: #03002b;
+  background-color:rgb(61, 101, 187);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
 }
 
