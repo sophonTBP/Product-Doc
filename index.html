@@ -8,6 +8,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link href="main.css" rel="stylesheet">
 
@@ -17,9 +18,9 @@
 <body>
 
 
-    <navbar class="navbar navbar-dark sticky-top  p-0 shadow">
+    <navbar class="navbar navbar-dark sticky-top text-white p-0 shadow" id="nav-bar">
         <header class="navbar-brand col-md-3 col-lg-3 mr-0 px-3">Raspberry pi</header>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+        <button class="navbar-toggler x-button position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,44 +28,44 @@
     </navbar>
 
 
-
-    <nav id="navbar" class="col-md-3 col-lg-3 d-md-block  sidebar collapse navbar-collapse">
+    
+    <nav id="navbar" class="col-md-3 d-md-block  sidebar collapse navbar-collapse">
         <div class="sidebar-sticky px-3 pt-4 ">
             <header class="h4">Documentation</header>
             <ul class="navbar-nav ml-lg-auto px-3">
 
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#SD_card">SD card</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Monitor_Connection">Monitor Connection</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Keyboard_and_mouse">Keyboard and mouse</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Power_supply">Power supply</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Ethernet">Ethernet</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#USB_wireless_dongle">USB wireless dongle</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Audio_lead">Audio lead</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Troubleshooting">Troubleshooting</a>
                 </li>
-                <li class="nav_item">
+                <li class="nav_item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Installing_operating_system_images">Installing operating
                         system images</a>
                     </li>
-                <li class="nav_item">
+                <li class="nav_item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Using_other_tools">Using other tools</a>
                 </li>
-                <li class="nav_item">
+                <li class="nav_item btn btn-sm btn-outline-secondary">
                     <a class="nav-link" href="#Boot_your_new_OS">Boot your new OS</a>
                 </li>
             </ul>
