@@ -18,13 +18,14 @@
 
 
     <div class="row no-gutters">
-        <nav id="navbar" class="col-sm-12 col-md-3 col-xl-3 sticky-top">
+        <nav id="navbar" class="col-sm-12 col-md-4 col-xl-3 sticky-top">
             <div class=" sidebar-sticky border">
-                <img id="logo" src="img/kind.png" width=90% class="p-2 ml-4 mt-5"
+                <header>
+                <img id="logo" src="img/kind.png" width=80% class="img-responsive block-center mr-md-5 px-sm-3 mt-sm-3 ml-sm-5 "
                 alt="A Raspberry pi logo"
                 >
-                </img>
-                <ul class="navbar-nav mt-5 border">
+                </img></header>
+                <ul class="navbar-nav mt-3 border">
 
                     <li class="nav-item btn btn-sm border">
                         <a class="nav-link" href="#SD_card">SD card</a>
@@ -72,11 +73,11 @@
             ">
 
 
-                <section class="main-section mt-5 mb-5" id="SD_card">
-                    <header id="SD" class="h3 SD_card">SD
+                <section class="main-section mt-5 mb-5 border-top" id="SD_card">
+                    <header id="SD" class="h2 py-5">SD
                         card</header>
                     <article>
-                        <p class="pt-3">
+                        <p class="pb-3">
                             We recommend a minimum of 8GB class 4 or class 10 microSD card. To save time, you can get a
                             card
                             that is pre-installed with NOOBS or Raspberry Pi OS, although setting up your own card is
@@ -96,7 +97,7 @@
                             page first.
                         </p>
 
-                        <p>
+                        <p id= "tinynote">
                             Note: Only the Raspberry Pi 3A+, 3B+ and Compute Module 3+ can boot from an SD card larger
                             than 256
                             GB. This is because there was a bug in the SoC used on previous models of Pi.
@@ -116,14 +117,14 @@
 
                     </article>
                 </section>
-                <section class="main-section border-top mt-4 " id="Monitor_Connection">
-                    <header id="Monitor Connection" class="h2 mt-4 pt-5">
+                <section class="main-section border-top  " id="Monitor_Connection">
+                    <header id="Monitor Connection" class="h2 py-5">
                         Monitor Connection
                     </header>
 
                     <article>
 
-                        <p class="pt-3">
+                        <p class="pb-3">
 
                             The Raspberry Pi has an HDMI port which you can connect directly to a monitor or TV with an
                             HDMI
@@ -143,11 +144,11 @@
                 </section>
 
                 <section class="main-section border-top mt-4 " id="Keyboard_and_mouse">
-                    <header id="Keyboard and mouse" class="h2 mt-4 pt-5">Keyboard and mouse
+                    <header id="Keyboard and mouse" class="h2 py-5">Keyboard and mouse
 
                     </header>
                     <article>
-                        <ul class="pt-3">
+                        <ul class="pb-3">
                             <li>Any standard USB keyboard and mouse will work with your Raspberry Pi.</li>
                             <li>Wireless keyboards and mice will work if already paired.</li>
                             <li>For keyboard layout configuration options see raspi-config.</li>
@@ -157,9 +158,9 @@
                 </section>
 
                 <section class="main-section border-top mt-4" id="Power_supply">
-                    <header id="Power supply" class="h2 mt-4 pt-5">Power supply</header>
+                    <header id="Power supply" class="h2  py-5">Power supply</header>
                     <article>
-                        <ul class="pt-3">
+                        <ul class="pb-3">
                             <li>The Pi is powered by a USB Micro [models pre 4B] or USB Type-C [model 4B] power supply
                                 (like
                                 most standard mobile phone chargers).</li>
@@ -175,47 +176,12 @@
                             </li>
                         </ul>
                     </article>
-                    <div class="border-top mt-5"></div>
-                    <header id="Power supply Warnings" class="h2 mt-4 pt-5">Power Supply Warnings</header>
-                    <article>
-                        <p>On all models of Raspberry Pi since the Raspberry Pi B+ (2014) except the Zero range, there
-                            is
-                            low-voltage detection circuitry that will detect if the supply voltage drops below 4.63V
-                            (+/- 5%).
-                            This will result in a warning icon being displayed on all attached displays and an entry
-                            being being
-                            added to the kernel log.</p>
-                        <p>If you are seeing warnings, you should improve the power supply and/or cable, as low power
-                            can cause
-                            problems with corruption of SD cards, or erratic behaviour of the Pi itself; for example,
-                            unexplained crashes.</p>
-                        <p>Voltages can drop for a variety of reasons, for example if the power supply itself is
-                            inadequate, the
-                            power supply cable is made of too thin wires, or you have plugged in high demand USB
-                            devices.</p>
-                        <p></p>
-                    </article>
-
-                    <div class="border-top mt-5"></div>
-                    <header id="Backpowering" class="h2 mt-4 pt-5">Backpowering</header>
-                    <article>
-                        <p>Backpowering occurs when USB hubs do not provide a diode to stop the hub from powering
-                            against the
-                            host computer. Other hubs will provide as much power as you want out each port. Please also
-                            be aware
-                            that some hubs will backfeed the Raspberry Pi. This means that the hubs will power the
-                            Raspberry Pi
-                            through its USB cable input cable, without the need for a separate micro-USB power cable,
-                            and bypass
-                            the voltage protection. If you are using a hub that backfeeds to the Raspberry Pi and the
-                            hub
-                            experiences a power surge, your Raspberry Pi could potentially be damaged.</p>
-                    </article>
+                    
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="Ethernet">
-                    <header id="Ethernet" class="h2 mt-4 pt-5">Ethernet</header>
+                    <header id="Ethernet" class="h2  py-5">Ethernet</header>
                     <article>
-                        <p class="pt-3">Ethernet (network) cable [Model B/B+/2B/3B/3B+/4B only]</p>
+                        <p class="pb-3">Ethernet (network) cable [Model B/B+/2B/3B/3B+/4B only]</p>
                         <ul>
                             <li>An Ethernet cable is used to connect your Pi to a local network and the internet.</li>
                         </ul>
@@ -223,15 +189,15 @@
 
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="USB_wireless_dongle">
-                    <header class="h2 mt-4 pt-5" id="USB wireless dongle">USB wireless dongle</header>
-                    <article>
-                        <p class="pt-3">Only required if you need wireless connectivity and are using an older model without built-in
+                    <header class="h2 py-5" id="USB wireless dongle">USB wireless dongle</header>
+                    <article >
+                        <p class="pb-3">Only required if you need wireless connectivity and are using an older model without built-in
                             wireless functionality. </p>
                     </article>
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="Audio_lead">
-                    <header id="Audio lead" class="h2 mt-4 pt-5">Audio lead </header>
-                    <p class="pt-3">Audio can be played through speakers or headphones using a standard 3.5mm jack.</p>
+                    <header id="Audio lead" class="h2 py-5">Audio lead </header>
+                    <p class="pb-3">Audio can be played through speakers or headphones using a standard 3.5mm jack.</p>
                     <ul>
                         <li>Without an HDMI cable, an audio lead is necessary to produce sound.</li>
                         <li>No separate audio lead is necessary if you're using an HDMI cable to connect to a monitor
@@ -243,20 +209,20 @@
                     </ul>
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="Troubleshooting">
-                    <header id="Troubleshooting" class="h2 mt-4 pt-5">Troubleshooting</header>
+                    <header id="Troubleshooting" class="h2  py-5">Troubleshooting</header>
                     <article>
-                        <p class="pt-3">
+                        <p class="pb-3">
                             For any issues during setup, search the forums for a solution. If you cannot find one,
                             please post
                             your problem, providing as much detail as possible.
                         </p>
                     </article>
                 </section>
-                <section class="main-section border-top mt-4 mb-5" id="Installing_operating_system_images">
-                    <header id="Installing operating system images" class="h3 mt-4 pt-5">Installing operating system
+                <section class="main-section border-top  mb-5" id="Installing_operating_system_images">
+                    <header id="Installing operating system images" class="h2 py-5">Installing operating system
                         images
                     </header>
-                    <p class="pt-3">Raspberry Pi have developed a graphical SD card writing tool that works on Mac OS, Ubuntu 18.04
+                    <p class="pb-3">Raspberry Pi have developed a graphical SD card writing tool that works on Mac OS, Ubuntu 18.04
                         and
                         Windows, and is the easiest option for most users as it will download the image and install it
                         automatically to the SD card.</p>
@@ -277,8 +243,8 @@
 
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="Using_other_tools">
-                    <header id="Using other tools" class="h3 mt-4 pt-5">Using other tools</header>
-                    <p class="pt-3"><b class="h5">Download the image:</b>
+                    <header id="Using other tools" class="h2 py-5">Using other tools</header>
+                    <p class="pb-3"><b class="h5">Download the image:</b>
 
                         Official images for recommended operating systems are available to download from the Raspberry
                         Pi
@@ -311,8 +277,8 @@
                     </ul>
                 </section>
                 <section class="main-section border-top mt-4 mb-5" id="Boot_your_new_OS">
-                    <header class="h3 mt-4 pt-5" id="Boot your new OS">Boot your new OS</header>
-                    <p> class="pt-3"You can now insert the SD card into the Raspberry Pi and power it up.
+                    <header class="h2  py-5" id="Boot your new OS">Boot your new OS</header>
+                    <p class="pb-3"> You can now insert the SD card into the Raspberry Pi and power it up.
 
                         For the official Raspberry Pi OS, if you need to manually log in, the default user name is
                         <code>pi</code> , with password <code>raspberry</code>. Remember the default keyboard layout is

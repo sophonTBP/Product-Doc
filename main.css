@@ -5,8 +5,8 @@ html {
 
 header {
   font-family: "Roboto mono";
-  color: #c0c0c0;
-  padding-bottom: 1rem;
+  color: #ffffff;
+  padding-bottom: 2rem;
 }
 
 #logo {
@@ -14,21 +14,22 @@ header {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Roboto mono";
-  background-color: #356be0;
+  background-color: #2f4e91;
   color: #ffffff;
 }
-.code{
-  text-shadow: slategray rgba(255, 255, 255, 0.1);
-}
-section {
-  padding: 2rem;
-}
 
+section {
+  padding-top: 2rem;
+  padding:0 2rem ;
+}
+.tinynote{
+  font-size: 0.5rem;
+}
 #SD_card {
   margin-top: -25px;
-  padding-top: 25px;
+  
   display: inline-block;
 }
 
@@ -127,7 +128,7 @@ section {
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
-    background-color: #001b6d;
+    background-color: #18295c;
     color: rgba(216, 216, 216, 0.945);
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
   }
@@ -139,6 +140,7 @@ section {
   }
 }
 a {
+  font-size: 1.2rem;
   margin-top: 0.6em;
   margin-bottom: 0.5em;
   font-weight: 500;
@@ -163,7 +165,7 @@ a {
 .navbar-brand {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: 1.5rem;
+  
   background-color: #3d65bb;
 }
 
